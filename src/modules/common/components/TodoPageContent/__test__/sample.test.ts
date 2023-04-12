@@ -1,6 +1,6 @@
 describe('Sample test suite', () => {
   it('should assert something', () => {
-    expect(true).toBeTruthy();
+    expect(true).toBeFalsy();
   });
 });
 

@@ -1,15 +1,14 @@
-import { useState } from "react";
-import TaskContainer from "./TaskContainer";
-
+import { useState } from 'react';
+import TaskContainer from './TaskContainer';
 
 const TodoPageContent = () => {
   const [taskList, setTaskList] = useState<Array<string>>([]);
-  const [task, setTask] = useState("");
+  const [task, setTask] = useState('');
 
   const addTask = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setTaskList([...taskList, task]);
-    setTask("");
+    setTask('');
   };
 
   const removeTask = (finishedTask: string) => {
@@ -24,11 +23,11 @@ const TodoPageContent = () => {
       <form onSubmit={addTask}>
         <input
           value={task}
-          type="text"
-          placeholder="type a task"
+          type='text'
+          placeholder='type a task'
           onChange={(e) => setTask(e.target.value)}
         ></input>
-        <input type="submit" />
+        <input type='submit' />
       </form>
 
       <h4>List of tasks</h4>

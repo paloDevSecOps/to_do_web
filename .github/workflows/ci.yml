@@ -1,5 +1,4 @@
-name: Test before push
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+name: CI
 on: [push]
 jobs:
   testing:

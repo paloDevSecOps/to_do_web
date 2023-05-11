@@ -1,15 +1,12 @@
 import { ReactNode } from 'react';
+import { Wrapper } from './main-wrapper.style';
 
 type Props = {
   children: ReactNode;
-  backgroundColorFlag: boolean;
 };
 
 export const MainWrapper = (Props: Props) => {
-  if (Props.backgroundColorFlag) {
-    return <div style={{ backgroundColor: 'pink' }}>{Props.children}</div>;
-  }
-  return <div>{Props.children}</div>;
+  return <Wrapper>{Props.children}</Wrapper>;
 };
 
 export default MainWrapper;

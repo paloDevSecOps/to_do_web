@@ -3,5 +3,5 @@ WORKDIR /TO_DO_WEB
 COPY . .
 EXPOSE 3000
 CMD yarn install --production && \
-    yarn build
+    yarn start
 

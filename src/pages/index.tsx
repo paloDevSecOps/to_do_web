@@ -1,11 +1,12 @@
-import Link from 'next/link';
+import TodoPageContent from '../modules/common/components/TodoPageContent/TodoPageContent';
+import MainWrapper from '../modules/common/components/main-wrapper/main-wrapper';
 
 export default function Home() {
   return (
     <div>
-      <Link href='/todo'>
-        <button>Start todo list</button>
-      </Link>
+      <MainWrapper>
+        <TodoPageContent />
+      </MainWrapper>
     </div>
   );
 }

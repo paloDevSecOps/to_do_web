@@ -17,7 +17,7 @@ const TodoPageContent = () => {
   };
 
   return (
-    <>
+    <div>
       <h2>Todo list</h2>
 
       <form onSubmit={addTask}>
@@ -33,7 +33,7 @@ const TodoPageContent = () => {
       <h4>List of tasks</h4>
       <p>There are {taskList.length} task(s)</p>
       <TaskContainer taskList={taskList} onFinishTask={removeTask} />
-    </>
+    </div>
   );
 };
 
